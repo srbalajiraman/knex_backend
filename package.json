@@ -1,0 +1,26 @@
+{
+  "name": "backend_knex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "migrate": "npx knex migrate:latest --knexfile ./db/kenxfile.js",
+    "make-seed": "npx knex seed:make dev --knexfile ./db/kenxfile.js",
+    "seed": "npx knex seed:run --knexfile ./db/kenxfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "nodemon": "^3.0.2",
+    "objection": "^3.1.3",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4"
+  }
+}
